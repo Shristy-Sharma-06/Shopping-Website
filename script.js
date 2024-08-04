@@ -47,7 +47,25 @@ $(document).ready(function() {
     });
 });
 
+/*---------for-fix-menu-scroll */
+$(window).scroll(function(){
+    if($(document).scrollTop() > 50){
+        $('.navigation').addClass('fix-nav');
+    }
+    else{
+        $('.navigation').removeClass('fix-nav');
+    }
+});
 
+/* -----for responshive------------ */
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.navigation').toggleClass('active')
+    })
+
+
+})
 
 
 
